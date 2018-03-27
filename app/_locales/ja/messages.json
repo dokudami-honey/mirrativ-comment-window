@@ -1,0 +1,27 @@
+{
+  "appName": {
+    "message": "Mirrativ Comment Window",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "ミラティブコメント窓",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "Mirrativのコメントをリアルタイムで別タブに表示します。PCからの配信でコメントを含めたい場合などにご使用ください。",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "Mirrativ Comment Window",
+    "description": "The title of the browser action button"
+  },
+  "optionBackgroundColor": {
+    "message": "背景の色"
+  },
+  "descriptionBackgroundColor":{
+    "message": "コメントウィンドウの背景色をカラーネーム(red,greenなど)やカラーコード(#000000形式)で指定します"
+  },
+  "saveButton": {
+    "message": "保存"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": "last 2 versions"
+      },
+      "useBuiltIns": true,
+      "debug": false
+    }], "stage-1", "react"
+  ],
+  "ignore": ["node_modules"]
+}
