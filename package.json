@@ -65,6 +65,7 @@
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "redux-actions": "^2.3.0",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "redux-thunk-actions": "^1.1.6",
     "umbrella": "^0.1.4"
