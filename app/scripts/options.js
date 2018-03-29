@@ -26,7 +26,7 @@ const store = compose(applyMiddleware(...middlewares))(createStore)(Reducers);
  */
 class App extends Component {
   /**
-   * 開いた時の初期表示のため設定をロードする。
+   * 初期表示ロード
    */
   componentDidMount() {
     log(this.props);

@@ -1,11 +1,22 @@
-import { createActions } from 'redux-actions';
-import { createActionThunk } from 'redux-thunk-actions';
+import {
+  createActions
+} from 'redux-actions';
+import {
+  createActionThunk
+} from 'redux-thunk-actions';
 
 import initialConfig from './InitialConfig';
 
-const log = process.env.NODE_ENV === 'development' ? console.log : () => { };
+const log = process.env.NODE_ENV === 'development' ? console.log : () => {};
 
-const normalActions = createActions({}, 'CHANGE_BACKGROUND_COLOR');
+const normalActions = createActions({},
+  'CHANGE_BACKGROUND_COLOR',
+  'CHANGE_USER_NAME_COLOR',
+  'CHANGE_COMMENT_COLOR',
+  'TOGGLE_BACKGROUND_COLOR_PALETTE',
+  'TOGGLE_USER_NAME_COLOR_PALETTE',
+  'TOGGLE_COMMENT_COLOR_PALETTE'
+);
 const asyncActions = {
   // 非同期セーブ
   save: (config) => (dispatch) => {
@@ -16,7 +27,10 @@ const asyncActions = {
         if (chrome.runtime.lastError) {
           return reject(chrome.runtime.lastError.message);
         }
-        chrome.runtime.sendMessage({ action: 'config', config: config });
+        chrome.runtime.sendMessage({
+          action: 'config',
+          config: config
+        });
         resolve(result);
       });
     }));

@@ -18,6 +18,12 @@
   "optionBackgroundColor": {
     "message": "背景の色"
   },
+  "optionUserNameColor": {
+    "message": "ユーザー名の色"
+  },
+  "optionCommentColor": {
+    "message": "コメントの色"
+  },
   "descriptionBackgroundColor":{
     "message": "コメントウィンドウの背景色をカラーネーム(red,greenなど)やカラーコード(#000000形式)で指定します"
   },
