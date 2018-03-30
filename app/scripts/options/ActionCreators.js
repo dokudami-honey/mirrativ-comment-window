@@ -12,7 +12,9 @@ const log = process.env.NODE_ENV === 'development' ? console.log : () => {};
 const normalActions = createActions({},
   'CHANGE_BACKGROUND_COLOR',
   'CHANGE_USER_NAME_COLOR',
+  'CHANGE_USER_NAME_BOLD',
   'CHANGE_COMMENT_COLOR',
+  'CHANGE_COMMENT_BOLD',
   'TOGGLE_BACKGROUND_COLOR_PALETTE',
   'TOGGLE_USER_NAME_COLOR_PALETTE',
   'TOGGLE_COMMENT_COLOR_PALETTE'

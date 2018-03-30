@@ -27,7 +27,7 @@
     "chrome_style": true
   },
   "content_scripts": [{
-    "matches": ["https://www.mirrativ.com/broadcast/*", "http://192.168.33.30/*"],
+    "matches": ["https://www.mirrativ.com/broadcast/*", "http://192.168.33.40/*"],
     "css": [
       "styles/contentscript.css"
     ],

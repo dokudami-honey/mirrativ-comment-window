@@ -62,6 +62,14 @@ const reducer = handleActions({
         commentColorPalette: !visibility.commentColorPalette
       }
     };
+  },
+  'CHANGE_USER_NAME_BOLD': (state, action) => {
+    const config = state.config;
+    return { ...state, config: { ...config, userNameBold: action.payload } }
+  },
+  'CHANGE_COMMENT_BOLD': (state, action) => {
+    const config = state.config;
+    return { ...state, config: { ...config, commentBold: action.payload } }
   }
 }, initialState);
 export default reducer;

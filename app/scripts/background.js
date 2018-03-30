@@ -3,7 +3,7 @@
 const log = process.env.NODE_ENV === 'development' ? console.log : () => { };
 (() => {
   const pageStateMatchers = [{
-    hostEquals: '192.168.33.30'
+    hostEquals: '192.168.33.40'
   }].map((option) => new chrome.declarativeContent.PageStateMatcher({
     pageUrl: option
   }));
